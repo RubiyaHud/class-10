@@ -1,0 +1,169 @@
+/* common css start*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+
+    /* a is an inline element which does not take padding, therefore, convert it to inline-block */
+    display: inline-block;
+}
+
+.clr {
+    clear: both;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+}
+/* common css end*/
+
+
+/* Header part start */
+#hearder_part {
+    /* background-color: teal; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.logo {
+    padding-top: 25px;
+    float: left;
+    width: 270px;
+
+}
+
+.menu {
+    float: left;
+    width: 900px;
+    text-align: right;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    color: white;
+    line-height: 120px;
+    /*----explain-----*/
+
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+
+    padding-left: 30px;
+    /*because last child "Contact" does not have padding on its right*/
+
+    transition: all linear .4s;
+    /*To make the hover transition smoother with .4s or 400ms*/
+}
+
+.menu ul li a:hover {
+    color: #c7b299;
+
+}
+
+/* Header part end */
+
+/* banner part start */
+#banner_part {
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner_overlay {
+    /* padding top is counted from the top of page (which is 380px), because the mountain background image (in the banner) starts from the top  */
+    padding: 380px 0;
+
+    /* overlay color is #111111 with opacity 70% which we can get from the adobe*/
+    background: rgba(17, 17, 17, 0.7);
+}
+
+.banner_content {
+    text-align: center;
+}
+
+.banner_content h3 {
+    color: #fff;
+
+    /*it is 36pt in .psd file where font weight is Medium (that is 500)*/
+    font-size: 36px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.banner_content h1 {
+    color: #fff;
+
+    /*it is 52pt in .psd file where font weight is Extra Bold (that is 800)*/
+    font-size: 52px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.banner_content p {
+    color: #fff;
+
+    /*it is 16pt in .psd file where font weight is Light (that is 300)*/
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+
+    /* To break the paragrapghp into multiple lines */
+    padding: 0 286px;
+
+    /* padding bottom is already used here, we can't use padding again for the bottom space of the <p> tag, */
+    /* therefore, margin is used */
+    margin-bottom: 50px;
+
+    line-height: 24px;
+
+}
+
+.banner_content a {
+    color: #fff;
+
+    /*it is 14pt in .psd file where font weight is Extra bold (that is 800)*/
+    font-size: 14px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+
+    /* all uppercase */
+    text-transform: uppercase;
+
+    /* padding left & right 37px; top: 21px, bottom: 18px + 3px for border-bottom */
+    padding: 21px 37px 18px 37px;
+    border-bottom: 3px solid #736357;
+
+    background: #998675;
+    border-radius: 5px;
+
+    
+
+}
+
+/* banner part end */
